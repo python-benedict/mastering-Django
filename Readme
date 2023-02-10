@@ -7,6 +7,12 @@ with your first time using Django, you’ll have to take care of some initial se
 1. Download and setup python on your computer, python3.6 going is the best
 2. create a virtual environment on your computer using (py -m venv myvenv) where myvenv will be the name for your virtual environment
 Note: this virtual environment is important becuase it create a virtual space for you to work in on your pc instead of working in the entire space of your computer so any installations and setups just get to that space
-3. python -m pip install Django (This comman creates the django project)
+3. python -m pip install Django (This line get python installed on your computer)
+
+Note
+
+You’ll need to avoid naming projects after built-in Python or Django components. In particular, this means you should avoid using names like django (which will conflict with Django itself) or test (which conflicts with a built-in Python package)
+
+4. django-admin startproject <ProjectName>(This comman creates the django project)
 4. You can create an app by using django-admin startapp <AppName>
 5. To check the version of django installed use (python -m django --version) command on the command line
