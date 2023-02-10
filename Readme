@@ -1,1 +1,8 @@
 mastering Django
+
+# Installing and setting up django on your computer for development
+
+1. Download and setup python on your computer, python3.6 going is the best
+2. create a virtual environment on your computer using (py -m venv myvenv) where myvenv will be the name for your virtual environment
+Note: this virtual environment is important becuase it create a virtual space for you to work in on your pc instead of working in the entire space of your computer so any installations and setups just get to that space
+3. 
