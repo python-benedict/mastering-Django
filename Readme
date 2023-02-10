@@ -16,3 +16,8 @@ You’ll need to avoid naming projects after built-in Python or Django component
 4. django-admin startproject <ProjectName>(This comman creates the django project)
 4. You can create an app by using django-admin startapp <AppName>
 5. To check the version of django installed use (python -m django --version) command on the command line
+
+
+CREATING A POLL APP IN THE PROJECT
+1. register your app in the project settings.py file
+2. 
