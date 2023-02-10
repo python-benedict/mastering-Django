@@ -20,4 +20,33 @@ You’ll need to avoid naming projects after built-in Python or Django component
 
 CREATING A POLL APP IN THE PROJECT
 1. register your app in the project settings.py file
-2. 
+2. go to the views side and modify it like this
+    from django.http import HttpResponse
+
+    # Create your views here.
+    def index(request):
+        return HttpResponse('Hello, world. You are at the pool index')
+
+3. Go to the urls.py file in your project and modify it like this
+    from . import views
+
+    urlpatterns = [
+        path('', views.index, name='index'),
+    ]
+
+4. Go to the urls.py file in the project directory and modify it like this
+
+    from django.contrib import admin
+    from django.urls import path, include
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('polls/', include('polls.urls')),
+    ]
+
+5. run the development server using (python manage.py runserver)
+
+NOTE ON HOW URLS WORK:
+whenever django finds a matching url with the requested url, it calls the corresponding view with an HttpResponse object as the first argument and any value passed in the route as a keyword argument
+
+6. Now run (python manage.py migrate) to migrate the admin site, authentication, content type, messages, session and staticfiles tables in the database.
